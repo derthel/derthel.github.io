@@ -125,8 +125,13 @@ img:hover {
     font-size: 1rem;
   }
 
+    .box02__a p {
+      font-size: 1rem;
+    }
+
     .box02__b p {
     font-size: 1rem;
+    visibility: hidden;
   }
 
     .container {
