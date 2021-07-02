@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif, Helvetica;
+  transition: .5s ease-in-out;
+}
+
+
+
+/* Etiquetas */
+body {
+  background-color: white;
+}
+
+/* Titulo */
+.titulo_01 {
+    font-size: 2rem;
+    letter-spacing: 2.2rem;
+    text-align: center;
+
+    color: black;
+}
+
+/* Clases */
+.container {
+  width: 70%;
+  height: 400px;
+  margin-top: 2%;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  margin-right: auto;
+}
+
+.box01 {
+  background-color: #f4f07d;
+  width: 32.5%;
+  height: inherit;
+  float: left;
+}
+
+/*  Flex-box prueba */
+.box02 {
+    width: 32.5%;
+    height: inherit;
+    margin-left: 1.3%;
+    float: left;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background-color: #f4f07d;
+}
+
+.box02__a p {
+  font-size: 2rem;
+}
+
+.box02__b {
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-style: normal;
+    color: black;
+}
+
+.box02__c {
+  font-style: italic;
+}
+
+.box03 {
+  background-color: #f4f07d; 
+  width: 32.5%;
+  height: inherit;
+  float: right;
+}
+
+/* flex_container*/
+img {
+  width: 100%;
+
+}
+
+img:hover {
+    filter: opacity(.5)
+}
+
+.flex_container {
+  width: 70%;
+  display: flex;
+  margin-left: 15%;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 25%;
+  padding: 1% 1.2% 1% 0;
+}
+
+.col img {
+  margin-top: 4%;
+}
+
+/* footer */
+.footer {
+    height: 100px;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+
+    background-color: #eceaaa;
+}
+
+/* Query */
+@media (max-width: 800px) {
+
+    .col {
+        flex: 100%;
+        padding: 5px;
+    }
+    
+    .titulo_01 {
+    font-size: 1rem;
+  }
+
+    .box02__b p {
+    font-size: 1rem;
+  }
+
+    .container {
+    height: 200px;
+  }
+
+    .titulo_01 {
+      font-size: 0.8rem;
+  }
+  
+}
